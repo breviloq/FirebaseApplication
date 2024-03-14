@@ -48,7 +48,7 @@ public class TaskListFirebaseActivity extends AppCompatActivity {
         TextView tvFirstName = findViewById(R.id.tvFirstName);
         tvFirstName.setText("Hello " + user.getFirstName());
 
-        FirebaseDatabase db = FirebaseDatabase.getInstance("https://fir-application-456c3-default-rtdb.firebaseio.com/");
+        FirebaseDatabase db = FirebaseDatabase.getInstance("https://test-4d20a-default-rtdb.firebaseio.com/");
         DatabaseReference tasks = db.getReference().child("Tasks");
 
 

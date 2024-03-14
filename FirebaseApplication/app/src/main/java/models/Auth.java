@@ -15,7 +15,7 @@ public class Auth {
     public static User authorizedUser = null;
 
     public static void fetchUser(String username, OnUserReadyListener listener) {
-        FirebaseDatabase db = FirebaseDatabase.getInstance("https://fir-application-456c3-default-rtdb.firebaseio.com/");
+        FirebaseDatabase db = FirebaseDatabase.getInstance("https://test-4d20a-default-rtdb.firebaseio.com/");
         DatabaseReference users = db.getReference().child("Users");
 
         Query queryAuth = users.orderByChild("username").equalTo(username);

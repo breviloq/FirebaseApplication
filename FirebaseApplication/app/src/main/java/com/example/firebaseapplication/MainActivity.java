@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         TextView textView = findViewById(R.id.textView);
 
-        FirebaseDatabase db = FirebaseDatabase.getInstance("https://fir-application-456c3-default-rtdb.firebaseio.com/");
+        FirebaseDatabase db = FirebaseDatabase.getInstance("https://test-4d20a-default-rtdb.firebaseio.com/");
         DatabaseReference tasks = db.getReference().child("Tasks");
 
         Query query = tasks;
