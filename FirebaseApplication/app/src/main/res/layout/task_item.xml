@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?android:attr/listPreferredItemHeightLarge"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Title"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvIsMandatory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IsMandatory"
+        android:layout_gravity="left|bottom"
+        android:background="@color/teal_200"
+        android:padding="5dp"
+
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tvCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Count"
+        android:textStyle="italic"
+        android:layout_gravity="right|bottom"
+        android:textColor="@color/teal_700" />
+
+</FrameLayout>
