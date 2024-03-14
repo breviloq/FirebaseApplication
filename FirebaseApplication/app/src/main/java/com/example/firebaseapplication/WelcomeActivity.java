@@ -32,7 +32,7 @@ public class WelcomeActivity extends AppCompatActivity {
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
         } else {
-            FirebaseDatabase db = FirebaseDatabase.getInstance("https://jsc-2021-default-rtdb.europe-west1.firebasedatabase.app/");
+            FirebaseDatabase db = FirebaseDatabase.getInstance("https://fir-application-456c3-default-rtdb.firebaseio.com/");
             DatabaseReference users = db.getReference().child("Users");
 
             Query queryAuth = users.orderByChild("username").equalTo(username);

@@ -38,7 +38,7 @@ public class TaskListFirebaseActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_task_list_firebase);
         Toast.makeText(this, "TaskListFirebaseActivity2", Toast.LENGTH_LONG).show();
 
-        FirebaseDatabase db = FirebaseDatabase.getInstance("https://jsc-2021-default-rtdb.europe-west1.firebasedatabase.app/");
+        FirebaseDatabase db = FirebaseDatabase.getInstance("https://fir-application-456c3-default-rtdb.firebaseio.com/");
         DatabaseReference users = db.getReference().child("Users");
 
         SharedPreferences preferences = getSharedPreferences("app", MODE_PRIVATE);

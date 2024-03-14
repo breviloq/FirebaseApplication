@@ -22,7 +22,7 @@ public class SignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        FirebaseDatabase db = FirebaseDatabase.getInstance("https://jsc-2021-default-rtdb.europe-west1.firebasedatabase.app/");
+        FirebaseDatabase db = FirebaseDatabase.getInstance("https://fir-application-456c3-default-rtdb.firebaseio.com/");
         DatabaseReference users = db.getReference().child("Users");
 
 

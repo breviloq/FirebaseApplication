@@ -28,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
 
         SharedPreferences preferences = getSharedPreferences("app", MODE_PRIVATE);
 
-        FirebaseDatabase db = FirebaseDatabase.getInstance("https://jsc-2021-default-rtdb.europe-west1.firebasedatabase.app/");
+        FirebaseDatabase db = FirebaseDatabase.getInstance("https://fir-application-456c3-default-rtdb.firebaseio.com/");
         DatabaseReference users = db.getReference().child("Users");
 
         Button btn = findViewById(R.id.btn);
